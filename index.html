@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Friday</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="headerbox">
+        <div id="titlebox">
+          <h1>SUPER <span>FRIDAY</span></h1>
+          <p>24 horas das melhores ofertas!</p>
+          <p>
+            Falta pouco tempo para você garantir os produtos da sua lista de
+            desejos.
+          </p>
+        </div>
+        <div id="slides" class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1556228578-dd539282b964?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=654&q=80"
+                alt="mão segurando embalagem de creme"
+              />
+              <span class="tag-circle"> - 70% </span>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                alt="par de sapatos coloridos"
+              />
+              <span class="tag-circle"> - 50% </span>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1577174881658-0f30ed549adc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=662&q=80"
+                alt="fones de ouvido"
+              />
+              <span class="tag-circle"> - 20% </span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </header>
+      <section id="emailbox">
+        <p>Se inscreva para receber avisos sobre as novidades e promoções.</p>
+        <form>
+          <input id="email" type="email" placeholder="Escreva seu e-mail" />
+          <button id="send-email" type="submit" onClick="saveEmail()">
+            Me avise
+          </button>
+        </form>
+      </section>
+      <section id="categories">
+        <a href="#cosmetics" id="cosmetics-card" class="card">
+          <p>Cosméticos com até <span>70%</span> de desconto</p>
+        </a>
+        <a href="#shoes" id="shoes-card" class="card">
+          <p>Calçados com até <span>50%</span> de desconto</p>
+        </a>
+        <a href="#electronics" id="electronics-card" class="card">
+          <p>Eletrônicos com até <span>20%</span> de desconto</p>
+        </a>
+      </section>
+      <div class="divider-1"></div>
+      <div id="products">
+        <section id="cosmetics-section">
+          <h2>Cosméticos</h2>
+          <div id="cosmetics">
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1567433517180-d3e56cf7f81e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                alt="dois produtos de tratamento facial"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 100,00 </span>
+                <span class="new-price"> R$ 30,00 </span>
+              </div>
+            </div>
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1618330834871-dd22c2c226ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="sérum facial"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 200,00 </span>
+                <span class="new-price"> R$ 60,00 </span>
+              </div>
+            </div>
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="frasco de perfume"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 300,00 </span>
+                <span class="new-price"> R$ 90,00 </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divider-2"></div>
+        <section id="shoes-section">
+          <h2>Calçados</h2>
+          <div id="shoes">
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80"
+                alt="sapato preto"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 200,00 </span>
+                <span class="new-price"> R$ 100,00 </span>
+              </div>
+            </div>
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1512675828443-4f454c42253a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                alt="mão segurando sapatos marrons"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 300,00 </span>
+                <span class="new-price"> R$ 150,00 </span>
+              </div>
+            </div>
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=643&q=80"
+                alt="sapato vermelho com detalhes brancos em fundo amarelo"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 200,00 </span>
+                <span class="new-price"> R$ 100,00 </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="divider-1"></div>
+        <section id="electronics-section">
+          <h2>Eletrônicos</h2>
+          <div id="electronics">
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1547658718-f4311ad64746?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                alt="celular smartphone"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 2.000,00 </span>
+                <span class="new-price"> R$ 1.600,00 </span>
+              </div>
+            </div>
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+                alt="notebook com a tela aberta em mesa de madeira"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 10.000,00 </span>
+                <span class="new-price"> R$ 8.000,00 </span>
+              </div>
+            </div>
+            <div class="highlight">
+              <img
+                src="https://images.unsplash.com/photo-1548378329-437e1ef34263?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80"
+                alt="fone de ouvidos preto pendurado em suporte"
+              />
+              <div class="price-tag">
+                <span class="old-price"> R$ 200,00 </span>
+                <span class="new-price"> R$ 160,00 </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <p>Todos os direitos reservados.</p>
+    </footer>
+    <a href="#headerbox" class="back-to-top"><i class="icon-arrow-up"></i></a>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</html>
