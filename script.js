@@ -10,6 +10,7 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
+// save email
 function saveEmail() {
   let email = document.getElementById('email').value
   if (email !== '') {
