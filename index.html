@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Friday</title>
+    <title>Super Friday Vende Tudo</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,6 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/flip-master/flip.min.css" />
   </head>
   <body>
     <div class="container">
@@ -59,10 +58,17 @@
         </div>
       </header>
       <section id="emailbox">
-        <p>Se inscreva para receber avisos sobre as novidades e promoções.</p>
+        <p id="inscreva">
+          Se inscreva para receber avisos sobre as novidades e promoções
+        </p>
         <form>
+          <input id="name" type="text" placeholder="Nome" />
           <input id="email" type="email" placeholder="Escreva seu e-mail" />
-          <button id="send-email" type="submit" onClick="saveEmail()">
+          <button
+            id="send-email"
+            type="submit"
+            onClick="saveName(), saveEmail()"
+          >
             Me avise
           </button>
         </form>
@@ -190,11 +196,11 @@
       </div>
     </div>
     <footer>
+      <p>©2021 Vende Tudo.</p>
       <p>Todos os direitos reservados.</p>
     </footer>
     <a href="#headerbox" class="back-to-top"><i class="icon-arrow-up"></i></a>
   </body>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/flip-master/flip.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </html>

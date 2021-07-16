@@ -10,6 +10,16 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
+// save name
+function saveName() {
+  let name = document.getElementById('name').value
+  if (name !== '') {
+    localStorage.setItem('savedName', name)
+  } else {
+    alert('Preencha o campo nome')
+  }
+}
+
 // save email
 function saveEmail() {
   let email = document.getElementById('email').value

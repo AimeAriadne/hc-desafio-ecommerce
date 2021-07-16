@@ -5,16 +5,17 @@ html {
 body {
   background-color: #303236;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('https://www.nicepng.com/png/full/284-2847543_kick-butts-generation-yellow-and-orange-confetti.png');
-  background-size: contain;
+  background-image: url('https://library.kissclipart.com/20180904/fue/kissclipart-gold-confetti-png-1080-x-1920-clipart-confetti-f08d3f9376ee3754.png');
+  background-size: cover;
 }
 
 #logo {
   border-radius: 50%;
   width: 6.5rem;
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
+  clip-path: circle();
 }
 .container {
   width: 60rem;
@@ -74,18 +75,21 @@ body {
 
 h1,
 #titlebox span {
-  color: #ffe002;
   font-size: 5rem;
   text-align: center;
-}
-
-h1 {
-  font-weight: 900;
   line-height: 5.5rem;
 }
 
+h1 {
+  color: #fffffe;
+  font-weight: 900;
+  text-shadow: #ffe002 0px 0px 0.7rem;
+}
+
 #titlebox span {
+  color: #ffe002;
   font-weight: 400;
+  text-shadow: none;
 }
 
 h2 {
@@ -100,6 +104,11 @@ p {
   text-align: center;
 }
 
+#inscreva {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 form {
   display: table;
   margin: 0 auto 1.5rem;
@@ -107,13 +116,12 @@ form {
 
 input {
   background-color: #505050f5;
-  width: 25rem;
-  height: 2rem;
   border: none;
-  border-radius: 2rem 0 0 2rem;
   box-sizing: border-box;
   color: #fff;
   padding-left: 1rem;
+  height: 3rem;
+  font-size: 1.2rem;
 }
 
 input:focus,
@@ -122,9 +130,17 @@ input:active {
   box-shadow: none;
 }
 
+#email {
+  width: 30rem;
+}
+
+#name {
+  border-radius: 2rem 0 0 2rem;
+  border-right: 0.2rem solid #ffe002;
+}
 #send-email {
   width: 10rem;
-  height: 2rem;
+  height: 3rem;
   border: none;
   border-radius: 0 2rem 2rem 0;
   box-sizing: border-box;
@@ -132,6 +148,7 @@ input:active {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .divider-1 {
@@ -155,7 +172,7 @@ input:active {
   color: #303236;
   margin: 2rem 0;
   padding: 1rem 2rem;
-  background-color: #ffe1027c;
+  background-color: #fffffead;
   font-weight: 600;
 }
 
@@ -204,6 +221,7 @@ input:active {
 .highlight img {
   width: 100%;
   height: 26rem;
+  border-radius: 0.25rem;
 }
 
 .price-tag {
@@ -246,4 +264,9 @@ input:active {
 
   padding: 0.5rem;
   clip-path: circle();
+  opacity: 0.8;
+}
+
+.back-to-top:hover {
+  opacity: 1;
 }
